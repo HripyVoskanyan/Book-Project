@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='books.css') }}">
+	
+	<title>books</title>
+</head>
+<body>
+
+
+	<form method="get" action="/signup">
+    <button id="register">
+        <span id="register_text">Գրանցում</span>
+    </button> 
+</form>
+
+
+<div class="container">
+    <label for="vernagir"><b></b></label>
+    <input type="text" id="vernagir" placeholder="վերնագիր" name="վերնագիր" required>
+
+    <label for="hexinak"><b></b></label>
+    <input type="password" id="hexinak" placeholder="հեղինակ" name="հեղինակ" required>
+  
+  	<button type="submit">փնտրել</button>
+</div>
+<div class="container1">
+  <label for="books" id="labelbooks">ընտրիր ժանր:</label>
+  <select id="books" name="books">
+    <option value="Արկածային">Արկածային</option>
+    <option value="Արձակ">Արձակ</option>
+    <option value="Արևմտահայերեն">Արևմտահայերեն</option>
+    <option value="Դետեկտիվ">Դետեկտիվ</option>
+    <option value="Թատերգություն">Թատերգություն</option>
+    <option value="Հեքիաթ">Հեքիաթ</option>
+    <option value="Հոգևոր գրականություն">Հոգևոր գրականություն</option>
+    <option value="Մանկական գրականություն">Մանկական գրականություն</option>
+    <option value="Նովել">Նովել</option>
+    <option value="Պատմվածք">Պատմվածք</option>
+    <option value="Պոեզիա">Պոեզիա</option> 
+    <option value="Պոեմ">Պոեմ</option>
+    <option value="Վեպ">Վեպ</option>
+    <option value="Վիպակ">Վիպակ</option>
+    <option value="Ֆանտաստիկա">Ֆանտաստիկա</option>
+
+  </select>
+  
+    <button type="submit">փնտրել</button>
+    </div>
+</body>
+</html>

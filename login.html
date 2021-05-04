@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+
+<title>login</title>
+</head>
+<body>
+	<div class="login">
+	 	<h2 id="logintext">SIGN IN HERE</h2>
+	 	<input type="username" id="username" placeholder="Օգտանուն" autofocus>
+        <br>
+        <input type="password" id="password" placeholder="Գաղտնաբառ">
+        <button class="logbutton" type="submit"><a href="home"><i class="fa fa-lock"></i>  Մուտք գործել </a></button> <hr>
+        <label id="checkbox">
+        	<input type="checkbox" value="Հիշել" id="inp"> Remember me
+        	<span class="pull-right">
+        	
+        	</span>
+        	<a id="forget" href="#"> Մոռացել եմ</a>
+        </label>
+        
+        <hr>
+        <div class="registration">Դեռ չե՞ս գրանցվել <br/>
+           	<a class="" href="#">Գրանցում</a>
+        </div>
+	</div>
+
+</body>
+</html>

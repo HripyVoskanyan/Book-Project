@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+
+<title>գլխավոր էջ</title>
+</head>
+<body>
+	<h2 href="index.html" class="logo"><b>BOOK<span id="y">Y</span></b></h2>
+	<div class="menu">
+		<div class="welcomediv">
+			<span id="welcome">Բարի գալուստ</span><br>
+			<span id="welcome1">գրքերի աշխարհ</span>
+		</div>
+		
+        <form method="get" action="/books">
+        <!-- <div id="choicediv"> -->
+        	<button id="choicebut">
+        		<span id="choicetext">Ընտրել գիրք</span>
+        	</button> 
+
+            
+        <!-- </div> -->
+        </form>
+
+	</div>
+
+	<div class="content">
+        <form method="get" action="/login">
+    <button id="logout">
+        <span id="choicetext">Logout</span>
+    </button> 
+</form>
+		
+<div class="container">
+  <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
+  <div class="donut-chart-block block">
+                    <h2 class="titular">Գրքի նախընտրելի տարբերակը</h2>
+                    <div class="donut-chart">
+ <!-- PORCIONES GRAFICO CIRCULAR
+      ELIMINADO #donut-chart
+      MODIFICADO CSS de .donut-chart -->
+     <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="26"></div></div>
+     <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="7"></div></div>
+     <div id="porcion3" class="recorte"><div class="quesito win" data-rel="67"></div></div>
+     <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="3"></div></div>
+ <!-- FIN AÑADIDO GRÄFICO -->
+      <p class="center-date"><br><span class="scnd-font-color">2020</span></p>       
+       </div>
+                     <ul class="os-percentages horizontal-list">
+                        <li>
+                            <p class="էլեկտրոնային">E-BOOK</p>
+                            <p class="էլ-տոկոս">26<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="աուդիո">Audion</p>
+                            <p class="աուդ-տոկոս">7<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="տպագիր">Printed</p>
+                            <p class="տպ-տոկոս">67<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="չեն կարդում">none</p>
+                            <p class="չեն կարդում">3<sup>%</sup></p>
+                        </li>
+                        
+                    </ul>
+                </div>
+ <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+                <div class="line-chart-block block">
+     <div class="line-chart">
+       <div class='grafico'>
+       <ul class='eje-y'>
+         <li data-ejeY='30'></li>
+         <li data-ejeY='20'></li>
+         <li data-ejeY='10'></li>
+         <li data-ejeY='0'></li>
+       </ul>
+       <ul class='eje-x'>
+         <li>Apr</li>
+         <li>May</li>
+         <li>Jun</li>
+       </ul>
+         <span data-valor='25'>
+           <span data-valor='8'>
+             <span data-valor='13'>
+               <span data-valor='5'>   
+                 <span data-valor='23'>   
+                 <span data-valor='12'>
+                     <span data-valor='15'>
+                     </span></span></span></span></span></span></span>
+       </div>
+
+     </div>
+                    <ul class="month-data clear">
+                        <li>
+                            <p>APR<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>21<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p>MAY<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>48<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p>JUN<span class="scnd-font-color"> 2013</span></p>
+                            <p><span class="entypo-plus increment"> </span>35<sup>%</sup></p>
+                        </li>
+                    </ul>
+                </div>
+
+  
+  <div class="bar-chart-block block">
+    <h2 class='titular'>Ըստ կատեգորիայի </h2>
+    <div class='grafico bar-chart'>
+       <ul class='eje-y'>
+         <li data-ejeY='100'></li>
+         <li data-ejeY='80'></li>
+         <li data-ejeY='60'></li>
+         <li data-ejeY='40'></li>
+         <li data-ejeY='20'></li>
+         <li data-ejeY='0'></li>
+       </ul>
+       <ul class='eje-x'>
+         <li data-ejeX='37'><i>Արկածային</i></li>
+         <li data-ejeX='56'><i>Արձակ</i></li>
+         <li data-ejeX='25'><i>Արևմտահայերեն</i></li>
+         <li data-ejeX='18'><i>Դետեկտիվ</i></li>
+         <li data-ejeX='50'><i>Հեքիաթ</i></li>
+         <li data-ejeX='37'><i>Նովել</i></li>
+         <li data-ejeX='37'><i>Պատմվածք</i></li>
+         <li data-ejeX='37'><i>Պոեզիա</i></li>
+         <li data-ejeX='37'><i>Վեպ</i></li>
+         
+       </ul>
+    </div>
+  </div>
+            </div>
+
+	</div>
+
+
+</body>
+</html>
